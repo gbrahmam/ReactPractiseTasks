@@ -11,10 +11,36 @@
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/babel">
+  <div id="root"></div>
+  <script type="text/babel">
 //React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
+
+const UserInterface = ({props}) =>{
+
+  return (
+
+//HTML STRUCTURE 
+    <div class='container'>
+      <section class='one'>
+        <div class='box'></div>
+        <div class='box'></div>
+      </section>
+
+      <section class='two'>
+        <div class='box'></div>
+      </section>
+
+      <section class='three'>
+        <div class='box'></div>
+        <div class='box'></div>
+        <div class='box'></div>
+      </section>
+    </div>
+
+  )
+}
+
+ReactDOM.render(<UserInterface></UserInterface>, document.getElementById('root'));
 
 </script>
 <!--

@@ -1,1 +1,86 @@
+.container{
+    width:100%;
+    height:auto;
+  }
 
+  /* DEFAULT UI STYLES TO BE APPLIED ACROSS ALL RESOLUTIONS */
+  .one .box{
+    margin:10px;
+    height:100px;
+    background:yellow;
+}
+
+.two .box{
+    margin:10px;
+    height:100px;
+    background:pink;
+  }
+
+  .three .box{
+    margin:10px;
+    height:100px;
+    background:blue;
+  }
+
+  /* UI STYLES FOR SCREEN RESOLUTION OF 1024px */
+
+  @media screen and (min-device-width:1024px){
+      .one, .two, .three{
+        display:flex;
+        justify-content:space-between;
+      }
+      .one .box{
+        flex:1 1 auto;
+      }
+      .two .box{
+        flex:1 1 auto;
+      }
+      .three .box{
+        flex:1 1 auto;
+      }
+}
+
+/* UI STYLES FOR SCREEN RESOLUTION IN RANGE OF 768px TO 1023px */
+
+@media screen and (min-device-width:768px) and (max-device-width:1023px){
+    .one, .two{
+        display:flex;
+        justify-content:space-between;
+      }
+
+      .one .box{
+        flex:1 1 auto;
+      }
+      .two .box{
+        flex:1 1 auto;
+      }
+
+      .three{
+          display: flex;
+          flex-direction: column;
+      }
+}
+
+/* UI STYLES FOR SCREEN RESOLUTION IN RANGE OF 320px TO 767px */
+
+@media screen and(min-device-width:320px) and(max-device-width:767px){
+
+    .one{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .three{
+        display: flex;
+        flex-direction: column;
+    }
+}
+  
+  
+  
+  
