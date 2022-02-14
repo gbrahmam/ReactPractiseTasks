@@ -1,11 +1,122 @@
-.site-container{
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body, html{
+font-family: 'Roboto', sans-serif;
+background-color: #fafafa;
+font-size: 14px;
 }
-html {
-  font-size: 14px;
+
+.pageHeader{
+display:flex;
+justify-content:space-between;
+flex-flow:row nowrap;
+min-height:50px;
+border:1px solid black;
 }
-body {
-  line-height: 1.5;
-  color: black;
-  margin:0;
-} 
+
+.pageHeader p{
+position: relative;
+top: 50%;
+left: 10px;
+color:green;
+font-size:large;
+}
+
+.headImage{
+width:30px;
+height:30px;
+position:relative;
+top:13px;
+right:10px
+}
+
+.card-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column;
+margin-top:20px;
+}
+
+.card {
+background-color: #fff;
+width: 600px;
+border: 1px solid rgb(230, 230, 230);
+min-height: 615px;
+margin-bottom: 20px;
+border-radius: 1%;
+}
+
+.card .username{
+  display: flex;
+  justify-content:space-between;
+  flex-flow: row;
+}
+
+.card .username .text{
+  position: relative;
+  top: 50%;
+  left: 10px;
+  line-height: 10px;
+  font-size: large;
+}
+
+.username .location{
+  opacity: 0.5;
+}
+
+.card .username .btn{
+  position: relative;
+  top: 20px;
+  right: 10px;
+}
+
+.dot-btn{
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+
+}
+
+.postImage{
+width: 100%;
+}
+
+.icon-container{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+}
+
+.status .icon{
+  position: relative;
+  top: 15px;
+}
+
+.status .icon img{
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.status .date{
+  position: relative;
+  top: 1px;
+  right: 10px;
+  font-size: 16px;
+}
+
+.status .likes{
+  position: relative;
+  left: 15px;
+  opacity: 0.5;
+}
+
+.status .description{
+  position: relative;
+  left: 15px;
+  font-size: large;
+}
+
+
